@@ -31,7 +31,7 @@ const LoginPage = () => {
 
     try {
       // Fake login - kiểm tra với users trong db.json
-      const response = await fetch('http://localhost:3001/users');
+      const response = await fetch('https://3536jz-8185.csb.app/users');
       const users = await response.json();
 
       const user = users.find(u =>
